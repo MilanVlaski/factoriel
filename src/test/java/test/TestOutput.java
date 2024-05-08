@@ -24,7 +24,19 @@ public class TestOutput
 
 	@Test
 	void prints_factorial_solution_from_string_that_is_positive_int()
+	{ assertThat(Output.accept("3")).isEqualTo("3! equals 6"); }
+
+	@Test
+	void prints_alert_that_input_is_invalid_if_letters_used()
 	{
-		assertThat(Output.accept("3")).isEqualTo("3! equals 6");
+		assertThat(Output.accept("five"))
+		        .isEqualTo("Input invalid. Try a positive integer instead.");
+	}
+
+	@Test
+	void prints_alert_that_input_is_invalid_if_special_characters_used()
+	{
+		assertThat(Output.accept(";"))
+		        .isEqualTo("Input invalid. Try a positive integer instead.");
 	}
 }

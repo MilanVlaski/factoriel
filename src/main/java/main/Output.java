@@ -14,6 +14,15 @@ public class Output
 	}
 
 	public static String accept(String string)
-	{ return solveFactorial(Integer.valueOf(string)); }
+	{
+		try
+		{
+			Integer intOfString = Integer.valueOf(string);
+			return solveFactorial(intOfString);
+		} catch (NumberFormatException e)
+		{
+			return "Input invalid. Try a positive integer instead.";
+		}
+	}
 
 }
