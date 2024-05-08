@@ -12,4 +12,8 @@ public class TestFactoriel
 	@Test
 	void Factorial_of_zero_is_one()
 	{ assertThat(Factorial.factorial(0)).isEqualTo(1); }
+
+	@Test
+	void Factorial_of_one_is_one()
+	{ assertThat(Factorial.factorial(1)).isEqualTo(1); }
 }
