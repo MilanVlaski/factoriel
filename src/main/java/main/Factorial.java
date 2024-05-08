@@ -3,7 +3,7 @@ package main;
 public class Factorial
 {
 
-	public static int factorial(int number)
+	public static long factorial(int number)
 	{
 		if (number < 2)
 			return 1;
