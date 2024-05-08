@@ -10,7 +10,7 @@ public class TestOutput
 {
 
 	@Test
-	void Prints_factorial_solution()
+	void prints_factorial_solution()
 	{ assertThat(Output.solveFactorial(5)).isEqualTo("5! equals 120."); }
 	
 }
