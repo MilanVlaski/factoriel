@@ -20,4 +20,7 @@ public class TestFactoriel
 	void of_two_is_two()
 	{ assertThat(factorial(2)).isEqualTo(2); }
 
+	@Test
+	void of_three_is_six()
+	{ assertThat(factorial(3)).isEqualTo(6); }
 }
