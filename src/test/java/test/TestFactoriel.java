@@ -27,4 +27,8 @@ public class TestFactoriel
 	@Test
 	void of_four_is_twenty_four()
 	{ assertThat(factorial(4)).isEqualTo(24); }
+
+	@Test
+	void of_five_is_hundred_twenty()
+	{ assertThat(factorial(5)).isEqualTo(120); }
 }
