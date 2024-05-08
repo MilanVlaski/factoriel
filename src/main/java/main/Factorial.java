@@ -4,6 +4,11 @@ public class Factorial
 {
 
 	public static int factorial(int number)
-	{ return 1; }
+	{
+		if (number < 2)
+			return 1;
+		else
+			return number;
+	}
 
 }
