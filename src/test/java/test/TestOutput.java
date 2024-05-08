@@ -17,9 +17,9 @@ public class TestOutput
 	void prints_alert_that_number_should_not_be_negative()
 	{
 		assertThat(Output.solveFactorial(-5)).isEqualTo(
-		        "-5 is not a positive integer.\nPlease try a positive integer.");
+		        "-5 is not a positive integer.");
 		assertThat(Output.solveFactorial(-2)).isEqualTo(
-		        "-2 is not a positive integer.\nPlease try a positive integer.");
+		        "-2 is not a positive integer.");
 	}
 
 	@Test
@@ -30,13 +30,13 @@ public class TestOutput
 	void prints_alert_that_input_is_invalid_if_letters_used()
 	{
 		assertThat(Output.accept("five"))
-		        .isEqualTo("Input invalid. Try a positive integer instead.");
+		        .isEqualTo("Input invalid.");
 	}
 
 	@Test
 	void prints_alert_that_input_is_invalid_if_special_characters_used()
 	{
 		assertThat(Output.accept(";"))
-		        .isEqualTo("Input invalid. Try a positive integer instead.");
+		        .isEqualTo("Input invalid.");
 	}
 }
