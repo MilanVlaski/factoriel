@@ -23,4 +23,8 @@ public class TestFactoriel
 	@Test
 	void of_three_is_six()
 	{ assertThat(factorial(3)).isEqualTo(6); }
+
+	@Test
+	void of_four_is_twenty_four()
+	{ assertThat(factorial(4)).isEqualTo(24); }
 }
