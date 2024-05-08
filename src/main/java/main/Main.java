@@ -11,7 +11,7 @@ public class Main
 		{
 			while (true)
 			{
-				System.out.println("Please enter a positive integer.");
+				System.out.println("\nPlease enter a positive integer.");
 				String input = scanner.nextLine();
 				System.out.println(Output.accept(input));
 			}
